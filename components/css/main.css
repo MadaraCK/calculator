@@ -3,4 +3,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.bgc_calculator {
+  background-color: antiquewhite;
+  width: 100vw;
+  height: 100vh;
+}
+.bgc_calculator .calculator {
+  width: 400px;
+  height: 600px;
+  background: white;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+.bgc_calculator .result_calc {
+  height: 150px;
+  border-bottom: 1px solid lightgray;
+  background: lightgray;
+}
 /*# sourceMappingURL=main.css.map */
