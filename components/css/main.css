@@ -4,21 +4,135 @@
   box-sizing: border-box;
 }
 
+.clearfix {
+  overflow: auto;
+}
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .bgc_calculator {
-  background-color: antiquewhite;
+  background-color: bisque;
   width: 100vw;
   height: 100vh;
 }
 .bgc_calculator .calculator {
   width: 400px;
-  height: 600px;
+  height: 700px;
   background: white;
   border-radius: 30px;
-  margin: 0 auto;
+  margin: auto;
 }
-.bgc_calculator .result_calc {
+.bgc_calculator .calculator .result_calc {
   height: 150px;
   border-bottom: 1px solid lightgray;
-  background: lightgray;
+  background: rgb(242, 242, 242);
+  border-radius: 30px 30px 0 0;
+}
+.bgc_calculator .calculator .result_calc .result {
+  font-size: 60px;
+  display: flex;
+  justify-content: end;
+}
+.bgc_calculator .calculator .calc_number .delete_remove {
+  display: flex;
+  justify-content: end;
+  gap: 5px;
+  cursor: pointer;
+}
+.bgc_calculator .calculator .calc_number .delete_remove .delete_c {
+  background: rgb(247, 247, 247);
+  font-size: 45px;
+  width: 95px;
+  text-align: center;
+  padding-top: 15px;
+  border-radius: 10px;
+}
+.bgc_calculator .calculator .calc_number .delete_remove .delete_c:hover {
+  background: rgb(223, 223, 223);
+}
+.bgc_calculator .calculator .calc_number .delete_remove .fa-delete-left {
+  padding: 23px;
+  background: rgb(247, 247, 247);
+  margin-right: 5px;
+  border-radius: 10px;
+  font-size: 45px;
+}
+.bgc_calculator .calculator .calc_number .delete_remove .fa-delete-left:hover {
+  background: rgb(223, 223, 223);
+}
+.bgc_calculator .calculator .calc_number .numbers_divide {
+  margin-top: 5px;
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+}
+.bgc_calculator .calculator .calc_number .numbers_divide .divide {
+  text-align: center;
+}
+.bgc_calculator .calculator .calc_number .numbers_divide .divide .fa-divide {
+  padding: 20px 28px;
+  background: rgb(247, 247, 247);
+  border-radius: 10px;
+  font-size: 45px;
+  margin: 0 5px 5px 0;
+}
+.bgc_calculator .calculator .calc_number .numbers_divide .divide .fa-divide:hover {
+  background: rgb(223, 223, 223);
+}
+.bgc_calculator .calculator .calc_number .numbers_calc {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 45px;
+  gap: 5px;
+}
+.bgc_calculator .calculator .calc_number .numbers_calc .seven_calc,
+.bgc_calculator .calculator .calc_number .numbers_calc .eight_calc,
+.bgc_calculator .calculator .calc_number .numbers_calc .nine_calc,
+.bgc_calculator .calculator .calc_number .numbers_calc .multipy_calc,
+.bgc_calculator .calculator .calc_number .numbers_calc .four_calc,
+.bgc_calculator .calculator .calc_number .numbers_calc .five_calc,
+.bgc_calculator .calculator .calc_number .numbers_calc .six_calc,
+.bgc_calculator .calculator .calc_number .numbers_calc .one_calc,
+.bgc_calculator .calculator .calc_number .numbers_calc .two_calc,
+.bgc_calculator .calculator .calc_number .numbers_calc .three_calc,
+.bgc_calculator .calculator .calc_number .numbers_calc .minus_calc,
+.bgc_calculator .calculator .calc_number .numbers_calc .plus_calc,
+.bgc_calculator .calculator .calc_number .numbers_calc .empty_calc,
+.bgc_calculator .calculator .calc_number .numbers_calc .zero_calc,
+.bgc_calculator .calculator .calc_number .numbers_calc .comma_calc,
+.bgc_calculator .calculator .calc_number .numbers_calc .equals_calc {
+  cursor: pointer;
+  width: 95px;
+  text-align: center;
+  padding: 15px;
+  background: rgb(247, 247, 247);
+  border-radius: 10px;
+}
+.bgc_calculator .calculator .calc_number .numbers_calc .seven_calc:hover,
+.bgc_calculator .calculator .calc_number .numbers_calc .eight_calc:hover,
+.bgc_calculator .calculator .calc_number .numbers_calc .nine_calc:hover,
+.bgc_calculator .calculator .calc_number .numbers_calc .multipy_calc:hover,
+.bgc_calculator .calculator .calc_number .numbers_calc .four_calc:hover,
+.bgc_calculator .calculator .calc_number .numbers_calc .five_calc:hover,
+.bgc_calculator .calculator .calc_number .numbers_calc .six_calc:hover,
+.bgc_calculator .calculator .calc_number .numbers_calc .one_calc:hover,
+.bgc_calculator .calculator .calc_number .numbers_calc .two_calc:hover,
+.bgc_calculator .calculator .calc_number .numbers_calc .three_calc:hover,
+.bgc_calculator .calculator .calc_number .numbers_calc .minus_calc:hover,
+.bgc_calculator .calculator .calc_number .numbers_calc .plus_calc:hover,
+.bgc_calculator .calculator .calc_number .numbers_calc .empty_calc:hover,
+.bgc_calculator .calculator .calc_number .numbers_calc .zero_calc:hover,
+.bgc_calculator .calculator .calc_number .numbers_calc .comma_calc:hover,
+.bgc_calculator .calculator .calc_number .numbers_calc .equals_calc:hover {
+  background: rgb(223, 223, 223);
+}
+.bgc_calculator .calculator .calc_number .numbers_calc .equals_calc {
+  background: rgb(247, 145, 146);
+}
+.bgc_calculator .calculator .calc_number .numbers_calc .equals_calc:hover {
+  background: red;
 }
 /*# sourceMappingURL=main.css.map */
