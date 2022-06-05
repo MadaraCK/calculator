@@ -38,6 +38,10 @@
   display: flex;
   justify-content: right;
 }
+.bgc_calculator .calculator .result_calc .previous-operand {
+  font-size: 28px;
+  color: rgba(0, 0, 0, 0.5);
+}
 .bgc_calculator .calculator .result_calc .result {
   font-size: 60px;
   display: flex;
@@ -48,6 +52,16 @@
   justify-content: end;
   gap: 5px;
   cursor: pointer;
+}
+.bgc_calculator .calculator .calc_number .delete_remove .del {
+  font-size: 40px;
+  text-transform: uppercase;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.bgc_calculator .calculator .calc_number .delete_remove .del:hover {
+  background: rgb(223, 223, 223);
 }
 .bgc_calculator .calculator .calc_number .delete_remove .delete_c {
   background: rgb(247, 247, 247);
@@ -84,6 +98,10 @@
   padding: 20px 33px;
   border-radius: 10px;
   margin: 0 5px 5px 0;
+  cursor: pointer;
+}
+.bgc_calculator .calculator .calc_number .numbers_divide .divide button:hover {
+  background: rgb(223, 223, 223);
 }
 .bgc_calculator .calculator .calc_number .numbers_divide .divide .fa-divide {
   padding: 20px 28px;
