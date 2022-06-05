@@ -15,38 +15,42 @@
 <header class="bgc_calculator">
     <section class="calculator">
         <div class="result_calc">
-            <h1 class="result">0</h1>
+            <div data-previous-operand class="previous-operand">0</div>
+
+            <div data-current-operand class="current-operand">0</div>
         </div>
         <section class="calc_number">
             <div class="delete_remove">
-                <p class="delete_c">C</p>
-                <p><i class="fa-solid fa-delete-left"></i></p>
+                <button data-all-clear class="delete_c">C</button>
+                <button data-delete class="del">del</button>
             </div>
             <div class="numbers_divide clearfix">
                 <div class="divide ">
-                    <p><i class="fa-solid fa-divide"></i></p>
+                    <button data-operation>÷</button>
                 </div>
             </div>
             <section class="numbers_calc">
-                <span class="seven_calc">7</span>
-                <span class=" eight_calc">8</span>
-                <span class=" nine_calc">9</span>
-                <span class=" multipy_calc"><i class="fa-solid fa-xmark"></i></span>
-                <span class="four_calc">4</span>
-                <span class=" five_calc">5</span>
-                <span class=" six_calc">6</span>
-                <span class=" minus_calc"><i class="fa-solid fa-minus"></i></span>
-                <span class="one_calc">1</span>
-                <span class=" two_calc">2</span>
-                <span class=" three_calc">3</span>
-                <span class=" plus_calc"><i class="fa-solid fa-plus"></i> </span>
-                <span class="empty_calc"></span>
-                <span class=" zero_calc">0</span>
-                <span class=" comma_calc">,</span>
-                <span class=" equals_calc"><i class="fa-solid fa-equals"></i> </span>
+                <button data-number class="seven_calc">7</button>
+                <button data-number class=" eight_calc">8</button>
+                <button data-number class=" nine_calc">9</button>
+                <button data-operation class=" multipy_calc">*</button>
+                <button data-number class="four_calc">4</button>
+                <button data-number class=" five_calc">5</button>
+                <button data-number class=" six_calc">6</button>
+                <button data-operation class=" minus_calc">-</button>
+                <button data-number class="one_calc">1</button>
+                <button data-number class=" two_calc">2</button>
+                <button data-number class=" three_calc">3</button>
+                <button data-operation class=" plus_calc">+ </button>
+                <button data-number class="empty_calc"></button>
+                <button data-number class=" zero_calc">0</button>
+                <button data-number class=" comma_calc">,</button>
+                <button data-equals class=" equals_calc"><i class="fa-solid fa-equals"></i> </button>
+
             </section>
         </section>
     </section>
 </header>
+<button data-number>s</button>
 </body>
 </html>
